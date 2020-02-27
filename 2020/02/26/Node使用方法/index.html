@@ -107,7 +107,7 @@
 	bglist[6] = "/img/12.jpg";
     setInterval('Getbg();', 2000);   //切换时间间隔，单位毫秒
     function Getbg(){
-                var bgindex = Math.round(Math.random()*7);
+                var bgindex = Math.floor(Math.random()*(6+1));
                 //输出随机背景
                 var bkg = document.getElementsByClassName("left-col")[0];
                 //这句话意思是找名字是left-col的class元素，找id可以用getElementById()
