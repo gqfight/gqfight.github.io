@@ -5,13 +5,13 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <link rel="dns-prefetch" href="http://yoursite.com">
+  <link rel="dns-prefetch" href="https://gqfight.github.io">
   <title>十七哟</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="一个正在学习前端的小菜鸡">
 <meta property="og:type" content="website">
 <meta property="og:title" content="十七哟">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="https://gqfight.github.io/index.html">
 <meta property="og:site_name" content="十七哟">
 <meta property="og:description" content="一个正在学习前端的小菜鸡">
 <meta property="article:author" content="郭强">
@@ -40,17 +40,17 @@
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow">
       
-<div class="overlay" style="background: #4d4d4d"></div>
+<div class="overlay"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
 			<img src="/img/avatar.jpg" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">小十七</a></h1>
+		  <h1 class="header-author"><a href="/">郭强</a></h1>
 		</hgroup>
 		
-		<p class="header-subtitle">生活不易，在线学艺</p>
+			<p id="hitokoto" style="font-size: 15px; color:#black">正在加载一言...</p>
 		
 
 		<nav class="header-menu">
@@ -58,15 +58,9 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
-	        
-				<li><a href="/archives/index.html">归档</a></li>
+				<li><a href="/archives">归档</a></li>
 	        
 			</ul>
-		</nav>
-		<nav class="header-menu">
-			总文章数 1
-			总字数 <span class="post-count">435</span>
 		</nav>
 		<nav class="header-smart-menu">
     		
@@ -100,7 +94,24 @@
 		</nav>
 	</header>		
 </div>
-
+<script >
+    var bglist = [];
+    bglist[0] = "/img/3.jpg";
+    bglist[1] = "/img/4.jpg";
+    bglist[2] = "/img/5.jpg";
+	bglist[3] = "/img/6.jpg";
+	bglist[4] = "/img/10.jpg";
+	bglist[5] = "/img/11.jpg";
+	bglist[6] = "/img/12.jpg";
+    setInterval('Getbg();', 2000);   //切换时间间隔，单位毫秒
+    function Getbg(){
+                var bgindex = Math.round(Math.random()*7);
+                //输出随机背景
+                var bkg = document.getElementsByClassName("left-col")[0];
+                //这句话意思是找名字是left-col的class元素，找id可以用getElementById()
+                bkg.style.backgroundImage="url("+ bglist[bgindex] +")";
+}
+</script>
     </div>
     <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
       
@@ -115,14 +126,12 @@
 				<img src="/img/avatar.jpg" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">小十七</h1>
+			  <h1 class="header-author js-header-author">郭强</h1>
 			</hgroup>
 			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>生活不易，在线学艺<i class="icon icon-quo-right"></i></p>
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>郭强的博客<i class="icon icon-quo-right"></i></p>
 			
 			
-			
-				
 			
 				
 			
@@ -147,14 +156,12 @@
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 70%">
+				<ul style="width: 50%">
 				
 				
-					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
+					<li style="width: 50%"><a href="/">主页</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
-		        
-					<li style="width: 33.333333333333336%"><a href="/archives/index.html">归档</a></li>
+					<li style="width: 50%"><a href="/archives">归档</a></li>
 		        
 				</ul>
 			</nav>
@@ -186,6 +193,7 @@
         <a href="/2020/02/26/Node%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/" class="archive-article-date">
   	<time datetime="2020-02-26T14:44:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-26</time>
 </a>
+
         
       </header>
       <div align="center" class="post-count">
@@ -194,7 +202,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="NPM模块管理"><a href="#NPM模块管理" class="headerlink" title="NPM模块管理"></a>NPM模块管理</h3><p>安装完成node后，基本自带npm模块管理器</p>
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=106 src="//music.163.com/outchain/player?type=2&id=1355315385&auto=1&height=66"></iframe>
+
+<h3 id="NPM模块管理"><a href="#NPM模块管理" class="headerlink" title="NPM模块管理"></a>NPM模块管理</h3><p>安装完成node后，基本自带npm模块管理器</p>
 <p>我们需要一个第三方（别人写的）模块，插件，类库或者框架，需要提前下载才可以使用</p>
 <p>基于npm第三方包管理器下载（yarn/bower。。。）</p>
 <p>1.npm下载的资源在<a href="http://www.npmjs.com中下载的" target="_blank" rel="noopener">http://www.npmjs.com中下载的</a></p>
@@ -239,6 +249,9 @@
 <p>安装bower 从github  全局安装less /babel-cli </p>
 
       
+      
+
+  <div class="declare" hidden="hidden"></div>
 
       
     </div>
@@ -246,6 +259,17 @@
       
       
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/web前端//" class="article-tag-list-link color1">web前端</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
         <p class="article-more-link">
@@ -296,9 +320,19 @@
       	</div>
     </div>
   </div>
-<span id="busuanzi_container_site_pv">    本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
-<span id="busuanzi_container_site_uv">  本站访客数<span id="busuanzi_value_site_uv"></span>人次</span>
+  
+	<!-- 不蒜子统计 -->
+	<span id="busuanzi_container_site_pv">
+			本站总访问量<span id="busuanzi_value_site_pv"></span>次
+	</span>
+	<span class="post-meta-divider">|</span>
+	<span id="busuanzi_container_site_uv" style='display:none'>
+			本站访客数<span id="busuanzi_value_site_uv"></span>人
+	</span>
+	<script async src="/busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
 </footer>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     </div>
     <script>
 	var yiliaConfig = {
@@ -312,7 +346,7 @@
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
-		showTags: false
+		showTags: true
 	}
 </script>
 
@@ -454,7 +488,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">大二单身编程小菜鸡是也</div>
   	  	
     	</section>
     
@@ -528,5 +562,24 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 
 </div>
   </div>
+  <!-- 一言API -->
+<!-- 现代写法，推荐 -->
+<!-- 兼容低版本浏览器 (包括 IE)，可移除 -->
+<script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
+<!--End-->
+<script>
+  fetch('https://v1.hitokoto.cn/?c=b')
+    .then(function (res){
+      return res.json();
+    })
+    .then(function (data) {
+      var hitokoto = document.getElementById('hitokoto');
+      hitokoto.innerText = data.hitokoto + '——<' + data.from + '>';
+    })
+    .catch(function (err) {
+      console.error(err);
+    })
+</script>
 </body>
 </html>
