@@ -6,15 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://gqfight.github.io">
-  <title>Archives: 2020/2 | 十七哟</title>
+  <title>python的知识点回顾 | 十七哟</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一个正在学习前端的小菜鸡">
-<meta property="og:type" content="website">
-<meta property="og:title" content="十七哟">
-<meta property="og:url" content="https://gqfight.github.io/archives/2020/02/index.html">
+  <meta name="description" content="Python.title()        使一个变量的内容首字母大写 .upper()    使一个变量的内容全部以大写显示 .lower()        使一个变量的内容全部以小写显示">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python的知识点回顾">
+<meta property="og:url" content="https://gqfight.github.io/2020/02/28/python/index.html">
 <meta property="og:site_name" content="十七哟">
-<meta property="og:description" content="一个正在学习前端的小菜鸡">
+<meta property="og:description" content="Python.title()        使一个变量的内容首字母大写 .upper()    使一个变量的内容全部以大写显示 .lower()        使一个变量的内容全部以小写显示">
+<meta property="article:published_time" content="2020-02-28T08:10:19.000Z">
+<meta property="article:modified_time" content="2020-02-28T08:15:57.264Z">
 <meta property="article:author" content="郭强">
+<meta property="article:tag" content="python">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="十七哟" type="application/atom+xml">
@@ -189,37 +192,148 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-python" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/02/28/python/" class="archive-article-date">
-  	<time datetime="2020-02-28T08:10:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-28</time>
-</a>
-
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/28/python/">python的知识点回顾</a>
+    <h1 class="article-title" itemprop="name">
+      python的知识点回顾
     </h1>
   
 
-        <div class="article-info info-on-right">
+        
+        <a href="/2020/02/28/python/" class="archive-article-date">
+  	<time datetime="2020-02-28T08:10:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-28</time>
+</a>
+
+	<!-- 不蒜子统计 -->
+	<span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+		  <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+	</span>
+
+        
+      </header>
+      <div align="center" class="post-count">
+        字数：788字 | 预计阅读时长: 2分钟
+      </div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
           
+            <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=413812448&auto=1&height=66"></iframe>
+
+<h1 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h1><p>.title()        使一个变量的内容首字母大写</p>
+<p>.upper()    使一个变量的内容全部以大写显示</p>
+<p>.lower()        使一个变量的内容全部以小写显示</p>
+<a id="more"></a>
+
+<p>\n    写在字符串里表示换行</p>
+<p>\t    写在字符串里表示一个tab的作用</p>
+<p>.rstrip()      让字符以除去末尾的空格的方式输出，但是本来的值没有变化</p>
+<p>.lstrip()        让字符以除去末尾的空格的方式输出，但是本来的值没变化</p>
+<p>strip()         让字符串以除去末尾和开头空格的方式输出，但是本来的值没有变化</p>
+<p>str()         让一个变量转换为字符串类型</p>
+<h4 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h4><blockquote>
+<p>由一系列按照特定顺序排列的元素组成     用方括号[]表示</p>
+<p>其中放置的元素可以是各种类别的</p>
+<p>可以用列表名[索引]访问列表中对应索引的元素</p>
+<p>列表是动态的，可以随意修改</p>
+</blockquote>
+<p>索引为-1        返回最后一个元素</p>
+<p>.append(元素)        将括号的元素添加到对应列表的末尾</p>
+<p>.insert(index,元素)    将括号中的元素插入到给定的索引中，索引后面的元素后移一位</p>
+<p>del + 列表名[索引]        删除指定索引的元素</p>
+<p>.pop()        将最后一个元素弹出的同时，会将它返回</p>
+<p>.remove(元素)        将对应元素删除，只删除第一个值</p>
+<p>.sort()     能进行排序（永久改变），传递reverse=True,可以进行反向排序</p>
+<p>sorted(列表)        临时排序，原列表无变化</p>
+<p>.reverse()    反转列表</p>
+<p>len（列表）    求出此列表的长度</p>
+<p>range（a，b）        创建由a到b-1的数字</p>
+<p>range（a,b,c)        从a开始按步长c取数字到b-1    </p>
+<p>list（）    将一个东西转换为列表</p>
+<p>min（列表）    求列表里最小的数    max同理</p>
+<p>sum（列表）    求列表所有数的和</p>
+<p>列表解析    </p>
+<blockquote>
+<p>列表名 = （ 对value要进行的操作 for value in range(1,11))=&gt;生产1-10的平方</p>
+</blockquote>
+<p>切片</p>
+<blockquote>
+<p>使用列表的一部分</p>
+<p>使用方法</p>
+<p>列表名[a:b+1]        使用索引为a到b的元素</p>
+<p>如果未指定第一个参数的索引，将会默认从0开始</p>
+<p>同理不指定第二个参数的索引，就会默认到最后一个元素</p>
+<p>因此利用这个原理加上负数索引会反向开始</p>
+<p>我们可以使用[-3:]这种表达得到最后三个</p>
+<p>还可以利用[:]来复制列表</p>
+</blockquote>
+<p>元组</p>
+<blockquote>
+<p>一组不可变的元素集合</p>
+<p>表示方法    元组名（元素）</p>
+<p>访问方法和列表一样</p>
+<p>虽然不可以更改元素，但是元组可以从新赋值来达到自己的要求</p>
+</blockquote>
+<p>字典</p>
+<blockquote>
+<p>可以将信息关联起来（采用键值对模式）</p>
+<p>创建方式：字典名    =    {‘元素名’：’元素值’  .. …..}</p>
+<p>通过元素名来进行访问</p>
+<p>添加方式</p>
+<p>字典名[元素名] = 元素值    //将自动添加到末尾</p>
+<p>删除方式：    del 字典名[元素名]</p>
+<p>遍历方式：    for     key,value in 字典名.items()：</p>
+<p>.keys()        for key in 字典名.keys()    可以遍历字典中的键</p>
+<p>.values()    可以遍历字典中的值</p>
+</blockquote>
+
+          
+        
+  
+
+  <div class="declare" hidden="hidden"></div>
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/zhifubao.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/wechat.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -231,7 +345,7 @@
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -244,67 +358,120 @@
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://gqfight.github.io/2020/02/28/python/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/02/26/Node%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/" class="archive-article-date">
-  	<time datetime="2020-02-26T14:44:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-26</time>
-</a>
 
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2020/02/26/Node%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Node的使用方法</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+<span id="busuanzi_container_page_pv">
+  本文阅读量: <span id="busuanzi_value_page_pv"></span>次
+</span>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/26/Node%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/">Node的使用方法</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Node</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/web前端//" class="article-tag-list-link color1">web前端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Python"><span class="toc-number">1.</span> <span class="toc-text">Python</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#列表"><span class="toc-number">1.0.0.1.</span> <span class="toc-text">列表</span></a></li></ol></li></ol></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
   
-    </div></section>
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -339,8 +506,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
