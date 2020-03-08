@@ -6,18 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://gqfight.github.io">
-  <title>Node的使用方法 | 十七哟</title>
+  <title>同步和异步 | 十七哟</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="NPM模块管理安装完成node后，基本自带npm模块管理器 我们需要一个第三方（别人写的）模块，插件，类库或者框架，需要提前下载才可以使用">
+  <meta name="description" content="同步编程与异步编程 同步编程:任务按照顺序以此处理，当前这件事没有彻底完成，下一件事是做不了的">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Node的使用方法">
-<meta property="og:url" content="https://gqfight.github.io/2020/02/26/Node%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/index.html">
+<meta property="og:title" content="同步和异步">
+<meta property="og:url" content="https://gqfight.github.io/2020/03/06/%E5%90%8C%E6%AD%A5%E5%92%8C%E5%BC%82%E6%AD%A5/index.html">
 <meta property="og:site_name" content="十七哟">
-<meta property="og:description" content="NPM模块管理安装完成node后，基本自带npm模块管理器 我们需要一个第三方（别人写的）模块，插件，类库或者框架，需要提前下载才可以使用">
-<meta property="article:published_time" content="2020-02-26T14:44:25.000Z">
-<meta property="article:modified_time" content="2020-02-29T05:16:31.932Z">
+<meta property="og:description" content="同步编程与异步编程 同步编程:任务按照顺序以此处理，当前这件事没有彻底完成，下一件事是做不了的">
+<meta property="article:published_time" content="2020-03-05T16:04:25.000Z">
+<meta property="article:modified_time" content="2020-03-08T15:07:34.485Z">
 <meta property="article:author" content="十七哟">
-<meta property="article:tag" content="Node">
+<meta property="article:tag" content="同步和异步">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="十七哟" type="application/atom+xml">
@@ -233,20 +233,20 @@ L2Dwidget.init();
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Node使用方法" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-同步和异步" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Node的使用方法
+      同步和异步
     </h1>
   
 
         
-        <a href="/2020/02/26/Node%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/" class="archive-article-date">
-  	<time datetime="2020-02-26T14:44:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-26</time>
+        <a href="/2020/03/06/%E5%90%8C%E6%AD%A5%E5%92%8C%E5%BC%82%E6%AD%A5/" class="archive-article-date">
+  	<time datetime="2020-03-05T16:04:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-06</time>
 </a>
 
         
@@ -257,60 +257,33 @@ L2Dwidget.init();
       
       </header>
       <div align="center" class="post-count">
-        字数：435字 | 预计阅读时长: 1分钟
+        字数：573字 | 预计阅读时长: 1分钟
       </div>
     
     <div class="article-entry" itemprop="articleBody">
       
         
           
-            <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1355315385&auto=0&height=66"></iframe>
-
-<h3 id="NPM模块管理"><a href="#NPM模块管理" class="headerlink" title="NPM模块管理"></a>NPM模块管理</h3><p>安装完成node后，基本自带npm模块管理器</p>
-<p>我们需要一个第三方（别人写的）模块，插件，类库或者框架，需要提前下载才可以使用</p>
+            <h4 id="同步编程与异步编程"><a href="#同步编程与异步编程" class="headerlink" title="同步编程与异步编程"></a>同步编程与异步编程</h4><blockquote>
+<p>同步编程:任务按照顺序以此处理，当前这件事没有彻底完成，下一件事是做不了的</p>
 <a id="more"></a>
 
-<p>基于npm第三方包管理器下载（yarn/bower。。。）</p>
-<p>1.npm下载的资源在<a href="http://www.npmjs.com中下载的" target="_blank" rel="noopener">http://www.npmjs.com中下载的</a></p>
-<p><code>npm install xxx</code></p>
-<p><code>npm install xxx -g</code></p>
-<p><code>npm uninstall xxx       npm uninstall xxx -g</code> </p>
-<blockquote>
-<p>把资源或者第三方模块安装到全局环境下（目的：以后可以基于命令来操作一些事情）</p>
+<p>异步编程：当前这件事没有彻底做完，需要等待一段时间才能继续，此时我们可以继续往下执行，当后面的任务完成后，再去把没做完的事情做完（有点的拖延症的感jio哈哈）</p>
 </blockquote>
-<p>基于npm安装的一些细节点</p>
-<blockquote>
-<p>需要联网</p>
-<p>下载成功后当前目录中多增加一个node_modules</p>
-<p>一般来说，下载下来的内容包含源码和最后供开发者使用的版本</p>
+<h4 id="JS中的异步编程"><a href="#JS中的异步编程" class="headerlink" title="JS中的异步编程"></a>JS中的异步编程</h4><blockquote>
+<p>1所有的事件绑定都是异步编程</p>
+<p>2所有定时器都是异步编程（ps：定时器设定一个时间，到时间后也不一定执行（可能还有其它任务正在执行，例如一个死循环），只能继续等待。</p>
+<p>3AJAX中一般都使用异步编程处理</p>
+<p>4回调函数也算是异步编程</p>
 </blockquote>
-<p>解决下载慢的问题</p>
-<p>基于nrm切换到国内下载源</p>
-<blockquote>
-<p>首先安装nrm，而且是把它安装到全局环境下</p>
-<p>安装完成后可以使用两个命令</p>
-<p>nrm ls 查看当前可用源</p>
-<p>nrm use xxx 使用某个源</p>
-<p>切完源还是基于npm安装操作</p>
+<h4 id="浏览器是如何规划同步异步机制的"><a href="#浏览器是如何规划同步异步机制的" class="headerlink" title="浏览器是如何规划同步异步机制的"></a>浏览器是如何规划同步异步机制的</h4><blockquote>
+<p>浏览器是多线程的，JS是单线程的（浏览器只给JS执行分配一个线程）</p>
+<p>进程：每一个应用程序都可以理解为一个进程（浏览器打开一个页面就开辟一个进程），在一个程序中我们经常会同时干很多事情，此时我们可以分配多个线程去同时完成多项任务</p>
+<p>JS在单线程中实现异步的机制，主要依赖于浏览器的任务队列完成的，浏览器中有两个任务队列（主任务队列，等待任务队列）</p>
+<p>在主任务队列自上而下执行的时候。如果遇到一个异步操作任务，没有立即执行，而是把它放到任务队列中排队</p>
+<p>当主任务队列完成后，才会到等待任务队列中进行查找（主任务队列完不成，不管等待任务队列中是否有达到时间的，都不执行，继续等待主任务队列完成，因为JS是单线程的（一次只能处理一件事情））</p>
+<p>等待任务队列中谁先达到条件了（如果有很对，谁先达到的，就先处理谁），就把这个任务从新放到主任务队列中去执行，把这个任务执行完，再去等待中找</p>
 </blockquote>
-<p>可以基于yarn来安装管理</p>
-<blockquote>
-<p>安装先安装yarn到全局，然后基于yarn安装我们需要的模块</p>
-<p>yarn add xxx 安装</p>
-<p>yarn remove 移除</p>
-<p>只能安装在本地</p>
-</blockquote>
-<p>基于cnpm淘宝镜像来处理</p>
-<h3 id="解决安装版本问题"><a href="#解决安装版本问题" class="headerlink" title="解决安装版本问题"></a>解决安装版本问题</h3><blockquote>
-<p>首先查看当前模块的历史版本信息</p>
-<p>npm view jquery  &gt; jquery.version.json </p>
-<p>使用npm view jquery versions</p>
-<p>这种方式可以查看npm服务器上所有的jquery版本信息；</p>
-<p>把当前模块的历史信息输出到具体的某个文件中</p>
-<p>安装指定版本</p>
-<p>yarn add  <a href="mailto:jquery@1.11.3">jquery@1.11.3</a>:npm和yarn 都是这样</p>
-</blockquote>
-<p>安装bower 从github  全局安装less /babel-cli </p>
 
           
         
@@ -359,7 +332,7 @@ L2Dwidget.init();
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Node</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">同步和异步</a>
         		</li>
       		
 		</ul>
@@ -371,7 +344,7 @@ L2Dwidget.init();
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/web前端//" class="article-tag-list-link color1">web前端</a>
+        			<a href="/categories/Js//" class="article-tag-list-link color3">Js</a>
         		</li>
       		
 		</ul>
@@ -426,7 +399,7 @@ L2Dwidget.init();
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://gqfight.github.io/2020/02/26/Node%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://gqfight.github.io/2020/03/06/%E5%90%8C%E6%AD%A5%E5%92%8C%E5%BC%82%E6%AD%A5/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -440,15 +413,20 @@ L2Dwidget.init();
   
 <nav id="article-nav">
   
-    <a href="/2020/02/28/python/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/03/06/promise/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          python的知识点回顾
+          promise
         
       </div>
     </a>
   
+  
+    <a href="/2020/03/05/%E5%AE%9A%E6%97%B6%E5%99%A8/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">定时器</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
@@ -473,7 +451,7 @@ L2Dwidget.init();
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#NPM模块管理"><span class="toc-number">1.</span> <span class="toc-text">NPM模块管理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#解决安装版本问题"><span class="toc-number">2.</span> <span class="toc-text">解决安装版本问题</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#同步编程与异步编程"><span class="toc-number">1.</span> <span class="toc-text">同步编程与异步编程</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#JS中的异步编程"><span class="toc-number">2.</span> <span class="toc-text">JS中的异步编程</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#浏览器是如何规划同步异步机制的"><span class="toc-number">3.</span> <span class="toc-text">浏览器是如何规划同步异步机制的</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -490,8 +468,8 @@ L2Dwidget.init();
   <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
 <script>
   var cloudTieConfig = {
-    url: "https://gqfight.github.io/2020/02/26/Node%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/", 
-    sourceId: "Node使用方法",
+    url: "https://gqfight.github.io/2020/03/06/%E5%90%8C%E6%AD%A5%E5%92%8C%E5%BC%82%E6%AD%A5/", 
+    sourceId: "同步和异步",
     productKey: "true",
     target: "cloud-tie-wrapper"
   };
